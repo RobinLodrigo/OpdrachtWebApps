@@ -28,7 +28,7 @@ app.factory('posts', [function() {
 
 app.controller('MainCtrl', [
   '$scope',
-  'posts'
+  'posts',
   function($scope, posts) {
     $scope.test = 'Hello world!';
     $scope.posts = posts.posts;
